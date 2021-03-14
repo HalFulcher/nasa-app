@@ -12,18 +12,19 @@ const Search = ({ setSearchResults }) => {
   };
 
   return (
-    <div className="Search">
+    <>
       <form className="search-form" onSubmit={handleSubmit}>
         <input
           className="search-input"
           type="text"
           onChange={(e) => setValue(e.target.value)}
+          placeholder="Search NASA image library..."
         />
         <button className="search-btn" type="submit">
-          Go!
+          Go
         </button>
       </form>
-    </div>
+    </>
   );
 };
 

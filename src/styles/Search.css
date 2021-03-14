@@ -10,16 +10,15 @@ input[type="text"] {
   }
   
   .search-input {
-    border: 1px solid #807e7e;
+    border: 2px solid #807e7e;
     border-right: none;
     border-radius: 25px 0px 0px 25px;
     background-color: rgba(255, 255, 255, 0.9);
     color: black;
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.2rem;
-    padding: 5px 5px 5px 10px;
+    font-family: "Courier", serif;
+    font-size: 1rem;
     outline: none;
-    width: 35%;
+    width: 30vw;
   }
   
   .search-btn {
@@ -37,6 +36,7 @@ input[type="text"] {
   
   .search-btn:active {
     color: black;
+
   }
   
   @media only screen and (max-width: 750px) {
@@ -46,9 +46,9 @@ input[type="text"] {
       border-radius: 25px 0px 0px 25px;
       background-color: rgba(255, 255, 255, 0.9);
       color: black;
-      font-family: "Montserrat", sans-serif;
+      font-family: "courier", serif;
       font-size: 1rem;
-      padding: 5px 5px 5px 10px;
+      padding: 5px 5px 5px 5px;
       outline: none;
       width: 80%;
     }
