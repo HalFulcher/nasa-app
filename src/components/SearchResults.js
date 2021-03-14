@@ -7,7 +7,9 @@ const SearchResults = ({ results }) => {
   } else {
     return (
       <>
-        <img src="mock-image" alt="space-img" />
+        {results.map((image) => (
+          <img className="card-image" src={image} alt="spaceImage" />
+        ))}
       </>
     );
   }
