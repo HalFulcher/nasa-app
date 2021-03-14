@@ -1,3 +1,5 @@
+You can view a live version of the app [here](https://halfulcher.github.io/nasa-app/).
+
 # React NASA Images App
 
 A search engine for NASA's image library. API endpoint was provided as part of the brief.
