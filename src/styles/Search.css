@@ -1,8 +1,55 @@
-.search-input {
-    margin: auto;
-    width: 20%;
-    height: 50px;
-    border-radius: 11px;
+input[type="text"] {
+    -webkit-appearance: none;
+  }
+  
+  .search-form {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: center;
+  }
+  
+  .search-input {
+    border: 1px solid #807e7e;
+    border-right: none;
+    border-radius: 25px 0px 0px 25px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    padding: 5px 5px 5px 10px;
+    outline: none;
+    width: 35%;
+  }
+  
+  .search-btn {
+    width: 100px;
+    height: 36px;
+    border: 1px solid black;
+    background: black;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
     font-size: 20px;
-    padding: 0 10px;
+  }
+  
+  
+  .search-btn:active {
+    color: black;
+  }
+  
+  @media only screen and (max-width: 750px) {
+    .search-input {
+      border: 1px solid #807e7e;
+      border-right: none;
+      border-radius: 25px 0px 0px 25px;
+      background-color: rgba(255, 255, 255, 0.9);
+      color: black;
+      font-family: "Montserrat", sans-serif;
+      font-size: 1rem;
+      padding: 5px 5px 5px 10px;
+      outline: none;
+      width: 80%;
+    }
   }
