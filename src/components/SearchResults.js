@@ -3,17 +3,24 @@ import "../styles/SearchResults.css";
 import PropTypes from "prop-types";
 
 const SearchResults = ({ results }) => {
-  if (!results.length) {
-    return <p>No results</p>;
-  } else {
-    return (
-      <>
-        {results.map((image) => (
-          <img className="card-image" src={image} alt="spaceImage" />
-        ))}
-      </>
-    );
-  }
+  return results.length ? (
+    results.map((result) => {
+      return (
+        <>
+          <div className="image-container">
+            <img
+              className="image"
+              src={result}
+              alt="Search result from NASA database"
+              data-testid="image"
+            />
+          </div>
+        </>
+      );
+    })
+  ) : (
+    <p>Sorry, no results. Please try again</p>
+  );
 };
 
 SearchResults.propTypes = {
