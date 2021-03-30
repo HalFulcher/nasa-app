@@ -18,7 +18,7 @@ const Search = ({ setSearchResults }) => {
           className="search-input"
           type="text"
           onChange={(e) => setValue(e.target.value)}
-          placeholder="Search NASA image library..."
+          placeholder="Search space images..."
         />
         <button className="search-btn" type="submit">
           Go
